@@ -20,3 +20,6 @@ jobs:
           git remote add --mirror=fetch mirror "https://github.com/camptocamp/odoo-cloud-platform.git"
           git fetch mirror +refs/heads/*:refs/remotes/origin/*
           git push --force --mirror --prune origin
+          
+          env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
