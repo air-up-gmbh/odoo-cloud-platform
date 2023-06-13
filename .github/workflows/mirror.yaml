@@ -21,5 +21,3 @@ jobs:
           git fetch mirror +refs/heads/*:refs/remotes/origin/*
           git push --force --mirror --prune origin
           
-          env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
